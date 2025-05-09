@@ -25,8 +25,6 @@
     const hardcodedPassword = '1234';
     
     if (email === hardcodedEmail && password === hardcodedPassword) {
-        alert('Account created successfully! Redirecting to homepage...');
-        // Redirect to index.html
 		                alert('Login successful! Redirecting to dashboard...');
         window.location.href = 'home.html';
     } else {
