@@ -28,7 +28,7 @@
         alert('Account created successfully! Redirecting to homepage...');
         // Redirect to index.html
 		                alert('Login successful! Redirecting to dashboard...');
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     } else {
         alert('Signup failed: Invalid email or password');
     }
