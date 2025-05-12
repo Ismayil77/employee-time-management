@@ -1,5 +1,5 @@
 const CLIENT_ID = '937327760089-j626mgf4s5141ojdlaekuhalp9mf9bqd.apps.googleusercontent.com';
-const API_KEY = 'YOUR_GOOGLE_API_KEY';
+const API_KEY = 'AIzaSyBe_fq1_8uF-s_BNSF2AuNzdXjawx0mAF0';
 const SCOPES = 'https://www.googleapis.com/auth/drive.file';
 let gapiAuthInstance;
 
