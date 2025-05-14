@@ -107,10 +107,10 @@ $(document).ready(function() {
     function saveDataToDrive(formData) {
 		debugger;
         // Ensure user is authenticated
-        if (!gapiAuthInstance || !gapiAuthInstance.isSignedIn.get()) {
-        alert("You must be signed in to save data.");
-        return;
-    }
+       // if (!gapiAuthInstance || !gapiAuthInstance.isSignedIn.get()) {
+       // alert("You must be signed in to save data.");
+       // return;
+   // }
 
         // Check if file exists on Google Drive
         gapi.client.drive.files.list({
