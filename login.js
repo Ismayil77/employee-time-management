@@ -4,6 +4,7 @@ const SCOPES = 'https://www.googleapis.com/auth/drive.file';
 let gapiAuthInstance;
 
 $(document).ready(function() {
+	debugger;
     // Form switching
     $('#show-signup').click(function(e) {
         e.preventDefault();
@@ -66,10 +67,9 @@ $(document).ready(function() {
         gapiAuthInstance.signIn();
     });
 
-    // Form submission and saving data to Google Drive
-    const signupUrl = 'https://script.google.com/macros/s/AKfycbwfzr7qNDdM6moGaVS9CJqhmuOGUGRMwdExPdLYg452jWqzz44gEH0-KQClVTDXQUVeIw/exec';
 
     $('#signupForm').submit(function(e) {
+		debugger;
         e.preventDefault();
 
         // Disable submit button to prevent multiple submissions
@@ -105,11 +105,12 @@ $(document).ready(function() {
 
     // Save data to Google Drive
     function saveDataToDrive(formData) {
+		debugger;
         // Ensure user is authenticated
-        if (!gapiAuthInstance.isSignedIn.get()) {
-            alert("You must be signed in to save data.");
-            return;
-        }
+        if (!gapiAuthInstance || !gapiAuthInstance.isSignedIn.get()) {
+        alert("You must be signed in to save data.");
+        return;
+    }
 
         // Check if file exists on Google Drive
         gapi.client.drive.files.list({
